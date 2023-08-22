@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="login/style.css">
+</head>
+
+<body>
+    <div class="select">
+        <button onclick="change(this.value)" value="login">Login</button>
+        <button onclick="change(this.value)" value="sign">Sign</button>
+    </div>
+    <div id="login" class="formcontainer">
+        <h1>Login</h1>
+        <form action="/token" method="post">
+            <label for="fname">Username:</label><br />
+            <input type="text" id="fname" name="username" value="Username" /><br />
+            <label for="lname">Password:</label><br />
+            <input type="password" id="lname" name="password" value="Password" /><br /><br />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="sign" class="formcontainer">
+        <h1>Sign</h1>
+        <form action="/sign" method="post">
+            <label for="fname">Username:</label><br />
+            <input type="text" id="fname" name="username" value="UserName" /><br /><br />
+            <label for="lname">Password:</label><br />
+            <input type="password" id="lname" name="pswrd" value="Password" /><br /><br />
+            <label for="lname">Email:</label><br />
+            <input type="email" id="lname" name="email" value="Email@example.com" /><br /><br />
+            <label for="lname">Name:</label><br />
+            <input type="text" id="lname" name="name" value="FirstName" /><br /><br />
+            <label for="lname">LastName:</label><br />
+            <input type="text" id="lname" name="lastname" value="LastName" /><br /><br />
+            <label for="lname">Age:</label><br />
+            <input type="date" id="lname" name="age" value="2000-06-02" /><br /><br />
+            <label for="lname">Gender:</label><br />
+            <div id="radio">
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male:</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female:</label>
+            </div>
+            <br /><br />
+            <label for="lname">City:</label><br />
+            <input type="text" id="lname" name="city" value="Caracas" /><br /><br />
+            <label for="lname">Country:</label><br />
+            <input type="text" id="lname" name="country" value="Venezuela" /><br /><br />
+            <button type="submit">Sign</button>
+        </form>
+    </div>
+</body>
+<script src="login/index.js"></script>
+
+</html>

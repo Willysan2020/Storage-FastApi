@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(65, 65, 65);
+}
+
+#sign {
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    min-height: 90%;
+    background-color: gray;
+    margin: 1%;
+    
+
+}
+#login {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-height: 90%;
+    background-color: gray;
+    margin: 1%;
+}
+
+#radio {
+    display: inline-block;
+}
+
+.formcontainer {
+    border: solid black;
+}
+
+.formcontainer form {
+    background-color: darkgray;
+    border: solid black;
+    padding: 1%;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+.select {
+    display: flex;
+    flex-flow: row wrap;
+   justify-content: center;
+}
+
+.select button {
+    width: 49%;
+    font-size: large;
+}
+
+label {
+    font-size: larger;
+}
